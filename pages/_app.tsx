@@ -1,8 +1,12 @@
 import '../styles/globals.css'
-import Home from "../components/home";
+import Shop from "../components/layouts/shop";
 
-function MyApp(): JSX.Element {
-  return <Home />
+function MyApp({ Component, pageProps }) {
+  return (
+      <Shop>
+        <Component {...pageProps} />
+      </Shop>
+  )
 }
 
 export default MyApp
